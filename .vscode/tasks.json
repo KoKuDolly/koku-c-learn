@@ -7,7 +7,53 @@
       "args": [
         "-fdiagnostics-color=always",
         "-g",
-        "${fileDirname}/*.c",
+        "${fileDirname}/index.c",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "D:\\msys64\\mingw64\\bin"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "调试器生成的任务。"
+    },
+    {
+      "type": "cppbuild",
+      "label": "server.task",
+      "command": "D:\\msys64\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${fileDirname}/server.c",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "D:\\msys64\\mingw64\\bin"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "调试器生成的任务。"
+    },
+    {
+      "type": "cppbuild",
+      "label": "client.task",
+      "command": "D:\\msys64\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${fileDirname}/client.c",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],

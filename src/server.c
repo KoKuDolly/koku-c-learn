@@ -3,17 +3,18 @@
 #include <string.h>
 #include <sys/types.h>
 #ifdef __WIN32__
-	#include <winsock2.h>
-	#include <ws2tcpip.h>
+#include <winsock.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
 #else
-	#include <sys/socket.h>
-	#include <arpa/inet.h>
-	#include <netinet/in.h>
-	#include <netinet/ip.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <netinet/ip.h>
 #endif
 
-#pragma comment(lib, "WSock32.lib")
- 
+#pragma comment(lib, "Ws2_32.lib")
+
 #define PORT 23
 #define BACKLOG 5
  
