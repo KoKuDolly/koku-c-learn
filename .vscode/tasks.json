@@ -2,43 +2,17 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "C/C++: gcc.exe 生成活动文件",
-      "command": "D:\\msys64\\mingw64\\bin\\gcc.exe",
-      "args": [
-        "-fdiagnostics-color=always",
-        "-g",
-        "${fileDirname}/index.c",
-        "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
-      ],
-      "options": {
-        "cwd": "D:\\msys64\\mingw64\\bin"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "detail": "调试器生成的任务。"
-    },
-    {
-      "type": "cppbuild",
       "label": "server.task",
-      "command": "D:\\msys64\\mingw64\\bin\\gcc.exe",
+      "command": "/usr/bin/gcc",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
         "${fileDirname}/server.c",
         "-o",
-        "-lwsock32",
-        // "-lw2_s32",
-        "-lws2_32",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
-        "cwd": "D:\\msys64\\mingw64\\bin"
+        "cwd": "/usr/bin/"
       },
       "problemMatcher": [
         "$gcc"
@@ -52,18 +26,16 @@
     {
       "type": "cppbuild",
       "label": "client.task",
-      "command": "D:\\msys64\\mingw64\\bin\\gcc.exe",
+      "command": "/usr/bin/gcc",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
         "${fileDirname}/client.c",
         "-o",
-        "-lwsock32",
-        "-lw2_s32",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
-        "cwd": "D:\\msys64\\mingw64\\bin"
+        "cwd": "/usr/bin/"
       },
       "problemMatcher": [
         "$gcc"
@@ -73,7 +45,30 @@
         "isDefault": true
       },
       "detail": "调试器生成的任务。"
-    }
+    },
+    {
+      "type": "shell",
+      "label": "last",
+      "command": "/usr/bin/gcc",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${fileDirname}/index.c",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "/usr/bin/"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "调试器生成的任务。"
+    },
   ],
   "version": "2.0.0"
 }

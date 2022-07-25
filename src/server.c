@@ -71,9 +71,9 @@ int main()
 	}else{
 		printf("buf: %s\n", buf);
 	}
- 
-	closesocket(new_fd);
-	closesocket(iSocketFD);
- 
+
+	pclose(new_fd);
+	pclose(iSocketFD);
+
 	return 0;
 }
