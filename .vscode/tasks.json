@@ -32,6 +32,9 @@
         "-g",
         "${fileDirname}/server.c",
         "-o",
+        "-lwsock32",
+        // "-lw2_s32",
+        "-lws2_32",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
@@ -55,6 +58,8 @@
         "-g",
         "${fileDirname}/client.c",
         "-o",
+        "-lwsock32",
+        "-lw2_s32",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {

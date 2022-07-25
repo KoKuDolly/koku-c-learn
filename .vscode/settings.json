@@ -34,4 +34,5 @@
     },
     "markdown.extension.tableFormatter.enabled": true,
     "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "terminal.external.windowsExec": "D:\\Program Files (x86)\\Git\\git-bash.exe"
 }

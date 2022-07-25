@@ -3,8 +3,8 @@
 #include <string.h>
 #include <sys/types.h>
 #ifdef __WIN32__
-#include <winsock.h>
 #include <winsock2.h>
+#include <winsock.h>
 #include <ws2tcpip.h>
 #else
 #include <sys/socket.h>
@@ -13,11 +13,12 @@
 #include <netinet/ip.h>
 #endif
 
-#pragma comment(lib, "Ws2_32.lib")
+#pragma comment(lib, "wsock32")
+#pragma comment(lib, "ws2_32")
 
 #define PORT 23
 #define BACKLOG 5
- 
+
 int main()
 {
 	int iSocketFD = 0;
