@@ -1,4 +1,5 @@
-
+#include <stdlib.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
@@ -72,8 +73,8 @@ int main()
 		printf("buf: %s\n", buf);
 	}
 
-	pclose(new_fd);
-	pclose(iSocketFD);
+	close(new_fd);
+	close(iSocketFD);
 
 	return 0;
 }

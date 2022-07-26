@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
@@ -13,8 +14,8 @@
 
  
 #define PORT 23
-#define ADDR "192.168.1.230"
- 
+#define ADDR "127.0.0.1"
+
 int main()
 {
 	int iSocketFD = 0;
@@ -43,7 +44,7 @@ int main()
 		recv(iSocketFD, buf, sizeof(buf), 0);
 		printf("Received:%s\n", buf);
 	}
-	
-	closesocket(iSocketFD);
+
+	close(iSocketFD);
 	return 0;
 }
