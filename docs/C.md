@@ -134,5 +134,39 @@ extern关键字的作用是声明一个变量或函数是在别处定义的，�
 (9) 【重学C/C++系列（二）】：extern关键字用法全解析 - 知乎. https://zhuanlan.zhihu.com/p/603959298.
 (10) extern (C++) | Microsoft Learn. https://learn.microsoft.com/zh-cn/cpp/cpp/extern-cpp?view=msvc-170.
 
+## 既然c语言中，全局变量默认就是extern的，那加extern和不加extern有什么区别呢
+
+您好，感谢您的提问。😊
+
+C语言中，全局变量默认就是extern的，也就是说它们可以在不同的文件中被引用。¹²³⁴
+
+加extern和不加extern的区别主要在于以下几点：
+
+- 加extern的全局变量是声明，不加extern的全局变量是定义。¹³⁴
+- 声明只是告诉编译器这个变量或函数的类型和名字，但不分配存储空间。定义是分配存储空间并赋予初始值的过程。¹³⁴
+- 一个变量或函数只能在一个文件中被定义一次，但可以在多个文件中被声明多次。¹³⁴
+- 如果不加extern，而在多个文件中定义了同一个全局变量或函数，会导致编译错误，因为重复定义了同一个符号。¹³⁴
+- 如果加了extern，就表示这个变量或函数是在别处定义的，要在此处引用。这样可以避免重复定义的问题，也可以实现跨文件的访问。¹²³⁴
+- 加了extern的全局变量不能再重新赋值，初始化需要在原文件所在处进行。¹²
+
+如果您想了解更多关于extern关键字的用法和示例，请参考以下链接：
+
+- [C语言丨正确使用extern关键字详解 - 知乎](^1^)
+- [C声明函数前加extern和不加有什么区别?-CSDN社区](^2^)
+- [C语言extern关键字用法和理解_小牛CKX的博客-CSDN博客](^3^)
+- [【重学C/C++系列（二）】：extern关键字用法全解析 - 知乎](^4^)
+
+希望这些信息对您有所帮助。如果您还有其他问题，欢迎继续与我交流。😊
+
+源: 与必应的对话， 2023/8/11
+(1) C语言丨正确使用extern关键字详解 - 知乎 - 知乎专栏. https://zhuanlan.zhihu.com/p/348762602.
+(2) C声明函数前加extern和不加有什么区别?-CSDN社区. https://bbs.csdn.net/topics/300023386.
+(3) C语言extern关键字用法和理解_小牛CKX的博客-CSDN博客. https://blog.csdn.net/qq_27664167/article/details/82859852.
+(4) undefined. https://www.cnblogs.com/cvtoEyes/p/8664901.html.
+(5) C语言丨正确使用extern关键字详解 - 知乎 - 知乎专栏. https://zhuanlan.zhihu.com/p/348762602.
+(6) C声明函数前加extern和不加有什么区别?-CSDN社区. https://bbs.csdn.net/topics/300023386.
+(7) C语言extern关键字用法和理解_小牛CKX的博客-CSDN博客. https://blog.csdn.net/qq_27664167/article/details/82859852.
+(8) undefined. https://www.cnblogs.com/cvtoEyes/p/8664901.html.
+
 
 
