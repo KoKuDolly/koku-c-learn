@@ -232,5 +232,29 @@ num in file1.c is 5
 (4) C语言extern的理解（新手）? - 知乎. https://www.zhihu.com/question/370624225.
 (5) extern (C++) | Microsoft Learn. https://learn.microsoft.com/zh-cn/cpp/cpp/extern-cpp?view=msvc-170.
 
+## 不同的c文件是不是属于不同的翻译单元
 
+您好，这是Bing。我可以帮您回答关于C语言中不同的c文件是否属于不同的翻译单元的问题。😊
+
+根据我从网络上搜索到的信息，C语言中一个源文件就是一个翻译单元¹，也就是说不同的c文件是属于不同的翻译单元的。²³
+
+翻译单元是由实现文件以及它直接或者间接包含的所有头文件组成。² 每个翻译单元都是由编译器单独编译的。² 编译完成之后，链接器会将编译的翻译单元合并到一个程序中。²
+
+如果要在不同的翻译单元中相互调用函数，需要使用extern关键字来声明函数的原型，或者将函数的原型放在头文件中，并在需要调用的文件中包含该头文件。³
+
+如果您想了解更多关于翻译单元和链接的知识，请参考以下链接：
+
+- [C/C++编程：翻译单元和链接_OceanStar的学习笔记的博客-CSDN博客](^1^)
+- [C 文件读写 | 菜鸟教程](^2^)
+- [不同.c文件的函数如何相互调用 - CSDN博客](^3^)
+
+希望这些信息对您有所帮助。如果您还有其他问题，欢迎继续与我交流。😊
+
+源: 与必应的对话， 2023/8/11
+(1) C/C++编程：翻译单元和链接_OceanStar的学习笔记的博客-CSDN博客. https://blog.csdn.net/zhizhengguan/article/details/115279052.
+(2) C 文件读写 | 菜鸟教程. https://www.runoob.com/cprogramming/c-file-io.html.
+(3) 不同.c文件的函数如何相互调用 - CSDN博客. https://blog.csdn.net/qq_42678415/article/details/86765726.
+(4) C/C++编程：翻译单元和链接_OceanStar的学习笔记的博客-CSDN博客. https://blog.csdn.net/zhizhengguan/article/details/115279052.
+(5) C 文件读写 | 菜鸟教程. https://www.runoob.com/cprogramming/c-file-io.html.
+(6) 不同.c文件的函数如何相互调用 - CSDN博客. https://blog.csdn.net/qq_42678415/article/details/86765726.
 
