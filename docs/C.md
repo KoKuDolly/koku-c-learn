@@ -184,6 +184,7 @@ C语言中，全局变量默认就是extern的，也就是说它们可以在不�
 
 下面是一个简单的例子来说明extern关键字的用法：
 
+```
 // file1.c
 #include <stdio.h>
 int num = 3; // 定义并初始化一个全局变量num
@@ -220,6 +221,7 @@ num in file1.c is 3
 num in file2.c is 5
 num in main.c is 5
 num in file1.c is 5
+```
 
 希望这些信息对您有所帮助。如果您还有其他问题，欢迎继续与我交流。😊
 
