@@ -100,4 +100,39 @@ int d; d = 40; 这两行代码本身没有语法错误，但是它们不符合�
 
 希望这些信息对您有帮助。如果您还有其他问题，欢迎继续提问。😊
 
+## c语言全局变量和函数默认就是extern吗
+
+您好，这是Bing。我可以帮您回答关于C语言中extern关键字的用法的问题。😊
+
+根据我从网络上搜索到的信息，C语言中全局变量和函数默认就是extern的，也就是说它们可以在不同的文件中被引用。¹²³⁴
+
+extern关键字的作用是声明一个变量或函数是在别处定义的，要在此处引用。¹³⁴
+
+如果想要限制一个全局变量或函数只能在当前文件中使用，可以使用static关键字进行修饰。²
+
+如果想要指定一个函数或变量使用其他语言的链接约定，可以使用extern和字符串一起，例如extern "C"。⁵
+
+如果您想了解更多关于extern关键字的用法和示例，请参考以下链接：
+
+- [C语言丨正确使用extern关键字详解 - 知乎](^1^)
+- [C语言中 extern 和 static 总结 - 知乎](^2^)
+- [extern的使用详解（多文件编程）——C语言 - Luv3 - 博客园](^3^)
+- [【重学C/C++系列（二）】：extern关键字用法全解析 - 知乎](^4^)
+- [extern (C++) | Microsoft Learn](^5^)
+
+希望这些信息对您有所帮助。如果您还有其他问题，欢迎继续与我交流。😊
+
+源: 与必应的对话， 2023/8/11
+(1) C语言丨正确使用extern关键字详解 - 知乎 - 知乎专栏. https://zhuanlan.zhihu.com/p/348762602.
+(2) C语言中 extern 和 static 总结 - 知乎 - 知乎专栏. https://zhuanlan.zhihu.com/p/27586298.
+(3) extern的使用详解（多文件编程）——C语言 - Luv3 - 博客园. https://www.cnblogs.com/lanhaicode/p/10633125.html.
+(4) 【重学C/C++系列（二）】：extern关键字用法全解析 - 知乎. https://zhuanlan.zhihu.com/p/603959298.
+(5) extern (C++) | Microsoft Learn. https://learn.microsoft.com/zh-cn/cpp/cpp/extern-cpp?view=msvc-170.
+(6) C语言丨正确使用extern关键字详解 - 知乎 - 知乎专栏. https://zhuanlan.zhihu.com/p/348762602.
+(7) C语言中 extern 和 static 总结 - 知乎 - 知乎专栏. https://zhuanlan.zhihu.com/p/27586298.
+(8) extern的使用详解（多文件编程）——C语言 - Luv3 - 博客园. https://www.cnblogs.com/lanhaicode/p/10633125.html.
+(9) 【重学C/C++系列（二）】：extern关键字用法全解析 - 知乎. https://zhuanlan.zhihu.com/p/603959298.
+(10) extern (C++) | Microsoft Learn. https://learn.microsoft.com/zh-cn/cpp/cpp/extern-cpp?view=msvc-170.
+
+
 
